@@ -26,7 +26,6 @@
 				if($resimIsim!="yok.png"){
 					copy($resim["tmp_name"],"../images/".$resimIsim);
 				}
-				else{}
 				$this->insert("egitimseminerleri","id,seminerAdi,detay,resim","'','$seminerAdi','$detay','$resimIsim'");
 			}
 			return $data;
