@@ -12,7 +12,10 @@
 				?>
 				<div class="wrapper pad_bot2">
 				  <figure class="left marg_right1"><img src="<?php echo clk::doc(); ?>images/<?php echo $ogretmen["ogretmenResim"]; ?>" alt=""></figure>
-				  <p class="pad_top2"><?php echo $ogretmen["ogretmenBilgileri"]; ?></p>
+				  <p class="pad_top2">
+					<strong><?php echo $ogretmen["ogretmenAdi"]; ?></strong><br />
+					<?php echo $ogretmen["ogretmenBilgileri"]; ?>
+				  </p>
 				</div>
 				<?php
 				}

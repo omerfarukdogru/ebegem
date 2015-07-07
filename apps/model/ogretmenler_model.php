@@ -5,7 +5,7 @@
 		}
 		public function veriler($q){
 			$data=array();
-			$data["ogretmenler"] = $this->select("ogretmenler");
+			$data["ogretmenler"] = $this->select("ogretmenler","","","ORDER BY id DESC");
 			$data["programlar"] = $this->select("programlar","","","ORDER BY id DESC");
 			$data["duyurular"] = $this->select("duyurular","","","ORDER BY id DESC LIMIT 5");
 			return $data;
