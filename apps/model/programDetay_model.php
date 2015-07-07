@@ -7,7 +7,7 @@
 			$data=array();
 			$id=clk::temizle($q[1]);
 			if($id){
-				$data["detaylar"]=$this->select("programlar","id='$id' and aktif='1'");
+				$data["detaylar"]=$this->select("programlar","id='$id'");
 			}
 			else{
 				header("Location:".clk::site());

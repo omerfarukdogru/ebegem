@@ -81,13 +81,13 @@
 				);
 				$onKayitId=$this->lastInsertId();
 				for($i=0;$i<count($programlar);$i++){
-					$program=$this->select("programlar","id='$programlar[$i]' and aktif='1'");
+					$program=$this->select("programlar","id='$programlar[$i]'");
 					foreach($program as $prog){
-						$programAdi = $prog["programAdi"];
+						$programAdi = $prog["id"];
 					}
-					$this->insert("onkayitdigerbilgiler","onkayitid,programAdi","'$onKayitId','$programAdi'");
+					$this->insert("onkayitdigerbilgiler","onkayitid,programid","'$onKayitId','$programAdi'");
 				}
-				header("Location:".clk::site()."/kayitBasarili");
+				//header("Location:".clk::site()."/kayitBasarili");
 			}
 			return $data;
 		}

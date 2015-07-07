@@ -5,7 +5,7 @@
 		}
 		public function veriler($q){
 			$data=array();
-			$data["programlar"]=$this->select("programlar","aktif='1'","","ORDER BY id DESC");
+			$data["programlar"]=$this->select("programlar","","","ORDER BY id DESC");
 			return $data;
 		}
 		public function __destruct(){
