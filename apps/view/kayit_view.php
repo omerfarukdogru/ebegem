@@ -1,3 +1,5 @@
+<div class="body2">
+<div class="main">
 <div class="kayitForm">
 	<form action="<?php echo clk::site(); ?>/kayitOl" method="post">
 		<table>

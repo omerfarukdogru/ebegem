@@ -35,5 +35,3 @@
 			</select> / <?php echo $sayfaSayi; ?>
 			<input type="submit" value="Sayfaya Git" class="button" />
 		</form>
-	</div>
-</div>
