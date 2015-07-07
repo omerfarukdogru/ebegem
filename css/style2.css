@@ -1,0 +1,127 @@
+.kayitForm{
+	width:980px;
+	height:auto;
+	margin:0 auto;
+}
+	.kayitForm form{
+		width:980px;
+		height:auto;
+	}
+		.kayitForm table{
+			width:980px;
+			height:auto;
+		}
+			.kayitForm table tr{
+				width:980px;
+				height:auto;
+			}
+				.kayitForm table tr td{
+					padding:5px;
+				}
+				.kayitForm table tr td.degisken{
+					width:100px;
+					height:auto;
+					border:1px solid;
+				}
+				.kayitForm table tr td.deger{
+					width:10px;
+					height:auto;
+					border:1px solid;
+				}
+					.kayitForm table tr td input[type="text"]{
+						border:1px solid #4C4C4C;
+						width:290px;
+					}
+					.kayitForm table tr td textarea{
+						border:1px solid #4C4C4C;
+						width:290px;
+						padding:2px;
+					}
+					.kayitForm table tr td.deger input[type="submit"]{
+						background:#2e83ff;
+						cursor:pointer;
+						width:80px;
+						height:30px;
+						border-radius:5px;
+						color:#fff;
+					}
+.onBilgiDiv{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:#e6e6e6;
+	display:block;
+	padding-top:50px;
+	padding-bottom:50px;
+	z-index:1000;
+}
+	.onBilgi{
+		width:980px;
+		height:auto;
+		margin:0 auto;
+	}
+	.kabulEdiyorum{
+		width:150px;
+		height:30px;
+		font-size:20px;
+		line-height:30px;
+		background:#2e83ff;
+		padding:10px;
+		border-radius:10px;
+		color:#fff;
+		margin:0 auto;
+		margin-top:30px;
+		cursor:pointer;
+	}
+	#programDetayları{
+		margin:0;
+		margin:0 auto;
+		float:none;
+		width:980px;
+		padding:0;
+	}
+	.iletisimBasarili{
+		width:100%;
+		display:block;
+		text-align:center;
+		color:#fff;
+		font-size:30px;
+		line-height:30px;
+		padding:10px;
+		background:#83aa19;
+	}
+	.iletisimBasarisiz{
+		width:100%;
+		display:block;
+		text-align:center;
+		color:#fff;
+		font-size:30px;
+		line-height:30px;
+		padding:10px;
+		background:#c33;
+	}
+	.mezunlarListesi{
+		background:#fff;
+		width:980px;
+	}
+		.mezunlarListesi table{
+			width:980px;
+			float:none;
+			margin:0 auto;
+		}
+		.mezunlarListesi table tr td{
+			border:1px solid;
+			width:465px;
+		}
+	.egitimSeminer{
+		width:600px;
+		height:162px;
+		position:relative;
+		float:left;
+	}
+		.egitimseminer figure img{
+			width:206px;
+			height:162px;
+		}
