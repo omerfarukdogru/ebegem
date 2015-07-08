@@ -13,22 +13,15 @@
             <li class="end"><a href="<?php echo clk::site(); ?>/iletisim">Iletisim</a></li>
           </ul>
         </nav>
-        <ul id="icon">
-          <li><a href="#"><img src="" alt=""></a></li>
-          <li><a href="#"><img src="" alt=""></a></li>
-          <li><a href="#"><img src="" alt=""></a></li>
-        </ul>
       </div>
       <div class="wrapper">
-        <h1><a href="<?php echo clk::site(); ?>" id="logo">EBEGEM</a></h1>
-      </div>
+		<div class="belediyeLogo">
+			<img src="<?php echo clk::site(); ?>/images/belediyeLogo.png" />
+		</div>
+        <h1><a href="<?php echo clk::site(); ?>" id="logo"><img src="<?php echo clk::site(); ?>/images/logo.png" /></a></h1>
+	  </div>
       <div id="slogan">BURADAYIZ.<span>Ögrenmeye açılan bir dünyada!</span> </div>
-      <ul class="banners">
-        <li><a href="#"><img src="" alt=""></a></li>
-        <li><a href="#"><img src="" alt=""></a></li>
-        <li><a href="#"><img src="" alt=""></a></li>
-      </ul>
-    </header>
+	</header>
     <!-- / header -->
   </div>
 </div>

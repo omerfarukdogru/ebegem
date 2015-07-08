@@ -8,7 +8,7 @@
             <div class="pad_left1">
               <h2>Merkezimize hoşgeldiniz.</h2>
               <p class="font2">EBEGEM HİZMET SAYFASI</p>
-              <p><strong>EBEGEM</strong> Hizmet linklerimiz <a href="<?php echo clk::site(); ?>/kurslar">Kurslar</a>, <a href="<?php echo clk::site(); ?>/ogretmenler">Öğretmenler</a>, <a href="<?php echo clk::site(); ?>/iletisim">İletişim</a> 
+              <p><strong>EBEGEM</strong> Hizmet linklerimiz <a href="<?php echo clk::site(); ?>/ogretmenler">Öğretmenler</a>, <a href="<?php echo clk::site(); ?>/kurslar">Kurslar</a>, <a href="<?php echo clk::site(); ?>/kayit">Kayıt</a>, <a href="<?php echo clk::site(); ?>/mezunbilgi">Mezun Bilgi Sistemi</a> <a href="<?php echo clk::site(); ?>/iletisim">İletişim</a> 
                </p>
             </div>
             <div class="pad_left1">

@@ -125,3 +125,15 @@
 			width:206px;
 			height:162px;
 		}
+	.belediyeLogo{
+		z-index:9999;
+		width:300px;
+		height:300px;
+		overflow:hidden;
+		position:absolute;
+		right:0;
+	}
+		.belediyeLogo img{
+			width:300px;
+			height:300px;
+		}
