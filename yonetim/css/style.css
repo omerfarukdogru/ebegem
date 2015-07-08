@@ -748,3 +748,13 @@ body{
 			margin-left:20px;
 			margin-top:20px;
 		}
+		.sayfayaGit{
+			width:100%;
+			height:auto;
+			margin-top:20px;
+			margin-left:20px;
+			background:#f0f0f0;	
+		}
+		select{
+			float:left;
+		}

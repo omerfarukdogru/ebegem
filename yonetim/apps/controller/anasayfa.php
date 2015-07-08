@@ -16,6 +16,7 @@
 					$kontrol=$a->loginKontrol(@$_POST["kadi"],@$_POST["sifre"]);
 					if($kontrol>0){
 						$_SESSION["giris"]=true;
+						$_SESSION["kullaniciAdi"]=$_POST["kadi"];
 						header("Location:".clk::site()."/anasayfa");
 					}
 				}
