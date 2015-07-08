@@ -12,7 +12,7 @@
 		td { padding:5px; }
 	</style>
 </head>
-<body onload="window.print(),window.close()">
+<body onload="window.print()">
 	<table>
 		<tr>
 			<td><strong>Sıra</strong></td>

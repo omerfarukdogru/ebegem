@@ -129,6 +129,7 @@
 					$_POST[$key]=ana::bulDegistir("=","&#61",$_POST[$key]);
 					$_POST[$key]=ana::bulDegistir(">","&#62",$_POST[$key]);
 					$_POST[$key]=ana::bulDegistir(">","&#62",$_POST[$key]);
+					$_POST[$key]=rtrim($_POST[$key]," ");
 				}
 				foreach($_GET as $key=>$value){
 					$_GET[$key]=ana::bulDegistir('"',"&#34",$_GET[$key]);
@@ -145,6 +146,7 @@
 					$_GET[$key]=ana::bulDegistir("<","&#60",$_GET[$key]);
 					$_GET[$key]=ana::bulDegistir("=","&#61",$_GET[$key]);
 					$_GET[$key]=ana::bulDegistir(">","&#62",$_GET[$key]);
+					rtrim($_GET[$key]," ");
 				}
 			}
 		}
