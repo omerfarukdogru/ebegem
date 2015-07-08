@@ -6,7 +6,8 @@
 		}
 		public function anasayfa($q){
 			$giris=@$_SESSION["giris"];
-			$this->load->view("bas");
+			$data["title"]="Anasayfa";
+			$this->load->view("bas",$data);
 			if($giris){
 				$this->load->view("solMenu");
 			}

@@ -6,7 +6,8 @@
 		}
 		public function duyuruEkle($q){
 			$giris=@$_SESSION["giris"];
-			$this->load->view("bas");
+			$data["title"]="Duyuru Ekle";
+			$this->load->view("bas",$data);
 			if($giris){
 				$this->load->view("solMenu");
 				$data = $this->load->model("duyuruEkle")->veriler($q);

@@ -29,4 +29,5 @@
 		?>
 	</table>
 	<a href="<?php echo clk::site(); ?>/tumOnKayitlarYazdir" class="yazdir">Bu Listeyi Yazdır</a>
+	<a href="<?php echo clk::site(); ?>/tumOnKayitlar/temizle" class="yazdir">Bu Listeyi Sil</a>
 </div>

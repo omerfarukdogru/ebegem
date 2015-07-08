@@ -6,7 +6,8 @@
 		}
 		public function mezunBilgiEkle($q){
 			$giris=@$_SESSION["giris"];
-			$this->load->view("bas");
+			$data["title"]="Mezun Bilgi Ekle";
+			$this->load->view("bas",$data);
 			if($giris){
 				$this->load->view("solMenu");
 				$data = $this->load->model($q[0])->veriler($q);

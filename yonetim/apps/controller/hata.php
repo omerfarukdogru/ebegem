@@ -6,7 +6,8 @@
 		}
 		public function hata($q){
 			$giris=@$_SESSION["giris"];
-			$this->load->view("bas");
+			$data["title"]="Hata Sayfası";
+			$this->load->view("bas",$data);
 			if($giris){
 				$this->load->view("solMenu");
 				

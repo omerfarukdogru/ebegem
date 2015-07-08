@@ -8,6 +8,7 @@
 			$id=clk::temizle(@$q[1]);
 			if($id){
 				$this->delete("programlar","id='$id'");
+				$this->delete("onkayitdigerbilgiler","programid='$id'");
 			}
 			$data["programlar"]=$this->select("programlar","","","ORDER BY id DESC");
 			return $data;

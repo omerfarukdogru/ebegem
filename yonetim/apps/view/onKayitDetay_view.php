@@ -18,4 +18,5 @@
 		?>
 	</table>
 	<a href="<?php echo clk::site(); ?>/onKayitListeYazdir/<?php echo $q[1]; ?>" class="yazdir">Bu Listeyi Yazdır</a>
+	<a href="<?php echo clk::site(); ?>/onKayitDetay/<?php echo $q[1]; ?>/temizle" class="yazdir">Bu Listeyi Sil</a>
 </div>

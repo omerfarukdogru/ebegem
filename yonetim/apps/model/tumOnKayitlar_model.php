@@ -6,6 +6,10 @@
 		public function veriler($q){
 			$data=array();
 			$data["tumOnKayitlar"] = $this->select("onKayit");
+			if(@$q[1]=="temizle"){
+				$this->delete("onkayit");
+				$this->delete("onkayitdigerbilgiler");
+			}
 			$sayac=0;
 			foreach($data["tumOnKayitlar"] as $on){
 				$ogrenciid=$on["id"];

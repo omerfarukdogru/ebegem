@@ -6,6 +6,9 @@
 		public function veriler($q){
 			$data=array();
 			$id=clk::temizle(@$q[1]);
+			if(@$q[2]=="temizle"){
+				$this->delete("onkayitdigerbilgiler","programid='$id'");
+			}
 			if($id){
 				$dersiAlanlarId=$this->select("onkayitdigerbilgiler","programid='$id'");
 				$data["dersiAlanlar"]=array();

@@ -7,7 +7,10 @@
 		public function kayitOl($q){
 			$a=$this->load->model($q[0]);/* model dosyalarımızı include ettik */
 			$data=$a->veriler($q);/*Verimizi aldık */
-			$this->load->view($q[0],$data);/* view dosyamızı include ettik $data değişkenimizi de gönderdik */
+			$this->load->controller("bas/EBEGEM | Kayıt Tamamlandı");
+			$this->load->controller("body1");
+			$this->load->view("kayitOl");
+			$this->load->controller("son");
 		}
 	}
 ?>
