@@ -16,7 +16,7 @@
 			}
 	</style>
 </head>
-<body><center>
+<body onload="window.print()"><center>
 	<h2>Kişi Bilgileri</h2>
 	<table>
 	<?php
