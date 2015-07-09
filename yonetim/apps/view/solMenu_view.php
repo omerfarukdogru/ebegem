@@ -16,6 +16,7 @@
 		<li><a href="<?php echo clk::site(); ?>/mezunBilgiEkle">Mezun Bilgi Ekle</a></li>
 		<li><a href="<?php echo clk::site(); ?>/mezunBilgiDuzenle">Mezun Bilgi Düzenle</a></li>
 		<li><a href="<?php echo clk::site(); ?>/mezunBilgiSil">Mezun Bilgi Sil</a></li>
+		<li><a href="<?php echo clk::site(); ?>/iletisim">İletişim Gelenler</a></li>
 		<li><a href="<?php echo clk::site(); ?>/yoneticiIslemleri">Yönetici İşlemleri</a></li>
 		<li><a href="<?php echo clk::site(); ?>/cikis">Çıkış</a></li>
 	</ul>

@@ -7,7 +7,6 @@
 			$data=array();
 			if($_POST){
 				clk::formVeriDuzelt();
-				var_dump($_POST);
 				$adSoyad = @$_POST["adSoyad"];
 				$email = @$_POST["email"];
 				$mesaj = @$_POST["mesaj"];
