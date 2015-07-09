@@ -38,7 +38,7 @@
 			}
 			else{
 			?>
-			<span class="iletisimBasarili">İletiniz başarıyla gönderildi.</span>
+			<span class="iletisimBasarili">İletiniz başarıyla gönderildi. </span>
 			<?php
 			}
 		?>
