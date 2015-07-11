@@ -115,6 +115,12 @@
 			border:1px solid;
 			width:465px;
 		}
+	.ustMenu{
+		width:980px;
+		margin:0 auto;
+		float:left;
+		margin-left:110px;
+	}
 	.egitimSeminer{
 		width:600px;
 		height:162px;
@@ -129,13 +135,24 @@
 			width:206px;
 			height:162px;
 		}
+	.logolar{
+		width:1200px;
+	}
+	.ebegemLogo{
+		float:left;
+		margin-top:40px;
+		z-index:999;
+	}
+		.ebegemLogo img{
+			
+		}
 	.belediyeLogo{
-		z-index:9999;
+		z-index:999;
 		width:300px;
 		height:300px;
 		overflow:hidden;
-		position:absolute;
 		right:0;
+		float:right;
 	}
 		.belediyeLogo img{
 			width:300px;

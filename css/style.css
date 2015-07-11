@@ -95,7 +95,8 @@ p {
 /* header */
 header {
 	height:376px;
-	width:100%;
+	width:1200px;
+	margin-left:-110px;
 	overflow:hidden
 }
 #logo {

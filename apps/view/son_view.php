@@ -17,7 +17,7 @@
                   <a href="mailto:lcenter@mail.com">lcenter@mail.com</a></p>
               </article>
               <article class="col_2 pad_left2">
-                <h3>KAYIT:</h3>
+                <h3>LINKLER:</h3>
                 <ul class="list2">
                   <li><a href="<?php echo clk::site(); ?>/kayit">Kayıt</a></li>
                 </ul>

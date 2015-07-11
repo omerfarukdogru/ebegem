@@ -4,4 +4,5 @@ $(document).ready(function(){
 		$(".onBilgiDiv").hide();
 		$(".kayitForm").show();
 	});
+	
 });

@@ -30,7 +30,7 @@ body{
 		}
 		.colakCMS a{
 			display:block;
-			color:#c0c0c0;
+			color:#ff9000;
 			width:240px;
 			padding-left:10px;
 		}
@@ -49,7 +49,7 @@ body{
 					padding-left:10px;
 					font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 					font-size: 14px;
-					color:#999;
+					color:#ff9000;
 					line-height:40px;
 				}
 				.solMenu ul li:hover{
