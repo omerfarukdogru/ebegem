@@ -121,7 +121,11 @@
 		position:relative;
 		float:left;
 	}
-		.egitimseminer figure img{
+		.egitimSeminer .figure{
+			width:206px;
+			height:162px;
+		}
+		.egitimSeminer .img{
 			width:206px;
 			height:162px;
 		}
@@ -142,4 +146,18 @@
 		height:auto;
 		float:left;
 		position:relative;
+	}
+		.egitimSeminerResimler .resim{
+			width:500px;
+			height:auto;
+			margin:0 auto;
+			margin-top:20px;
+		}
+			.egitimSeminerResimler .resim img{
+				width:500px;
+				height:auto;
+			}
+	.youtubeVideo{
+		margin:0 auto;
+		float:none;
 	}

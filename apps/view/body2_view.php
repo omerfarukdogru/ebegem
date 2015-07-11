@@ -19,8 +19,8 @@
 					foreach($seminerler as $seminer){
 				?>
 				<div class="egitimSeminer">
-					<figure class="left marg_right1">
-						<img src="<?php echo clk::site(); ?>/images/<?php echo $seminer["resim"]; ?>" alt="">
+					<figure class="left marg_right1 figure">
+						<img class="img" src="<?php echo clk::site(); ?>/images/<?php echo $seminer["resim"]; ?>" alt="">
 					</figure>
 					<p class="pad_bot1 pad_top2"><strong><?php echo $seminer["seminerAdi"]; ?></strong></p>
 					<p>

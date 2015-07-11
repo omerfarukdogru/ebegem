@@ -7,7 +7,8 @@
 		public function hakkimizda($q){
 			$this->load->controller("bas/EBEGEM | Hakkımızda");
 			$this->load->controller("body1");
-			$this->load->controller("body2");
+			$data = $this->load->model("hakkimizda")->veriler($q);
+			$this->load->view("hakkimizda",$data);
 			$this->load->controller("son");
 		}
 	}
