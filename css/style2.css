@@ -137,3 +137,9 @@
 			width:300px;
 			height:300px;
 		}
+	.egitimSeminerResimler{
+		width:980px;
+		height:auto;
+		float:left;
+		position:relative;
+	}

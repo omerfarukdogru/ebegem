@@ -5,7 +5,7 @@
         <div class="wrapper">
 			<?php
 				foreach($detaylar as $detay){
-					echo "aaa";
+					
 				?>
 				<article class="col1">
 					<div class="pad_left1">

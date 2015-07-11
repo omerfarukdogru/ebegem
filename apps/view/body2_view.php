@@ -24,9 +24,9 @@
 					</figure>
 					<p class="pad_bot1 pad_top2"><strong><?php echo $seminer["seminerAdi"]; ?></strong></p>
 					<p>
-						<?php echo $seminer["detay"]; ?>
+						<?php echo substr($seminer["detay"],0,50); ?>
 						<br />
-						<a href="<?php echo clk::site(); ?>/seminerKayit/<?php echo $seminer["id"]; ?>">Seminere Kayıt Ol.</a>
+						<a href="<?php echo clk::site(); ?>/seminerDetay/<?php echo $seminer["id"]; ?>">Seminer Detayları.</a>
 					</p>
 				</div>
 					<?php

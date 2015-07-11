@@ -9,7 +9,10 @@
 				$id=clk::temizle($q[1]);
 				$bilgi=$this->select("egitimseminerleri","id='$id'");
 				foreach($bilgi as $bilg){
-					unlink("../images/".$resim);
+					if($bilg["resim"]=="yok.png"){}
+					else{
+						unlink("../images/".$bilg["resim"]);
+					}
 				}
 				$this->delete("egitimseminerleri","id='$id'");
 			}

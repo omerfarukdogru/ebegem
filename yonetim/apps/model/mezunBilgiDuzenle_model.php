@@ -18,6 +18,7 @@
 			}
 			else{
 				$sayfa=1;
+				$data["sayfaSayi"]=1;
 				if(@$_POST["sayfa"]){
 					$sayfa = clk::temizle($_POST["sayfa"]);
 				}

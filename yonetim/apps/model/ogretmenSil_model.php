@@ -9,7 +9,10 @@
 			if($id){
 				$resimIcin = $this->select("ogretmenler","id='$id'");
 				foreach($resimIcin as $resim){
-					unlink("../images/".$resim["ogretmenResim"]);
+					if($resim["ogretmenResim"]=="yok.png"){}
+					else{
+						unlink("../images/".$resim["ogretmenResim"]);
+					}
 				}
 				$this->delete("ogretmenler","id='$id'");
 				header("Location:".clk::site()."/ogretmenSil");
