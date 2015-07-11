@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Anamakine: localhost
--- Üretim Zamanı: 09 Tem 2015, 01:17:16
+-- Üretim Zamanı: 11 Tem 2015, 22:01:34
 -- Sunucu sürümü: 5.5.20
 -- PHP Sürümü: 5.3.10
 
@@ -54,14 +54,7 @@ CREATE TABLE IF NOT EXISTS `duyurular` (
   `duyuruTarih` varchar(100) NOT NULL,
   `time` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
-
---
--- Tablo döküm verisi `duyurular`
---
-
-INSERT INTO `duyurular` (`id`, `duyuruBaslik`, `duyurudetay`, `duyuruTarih`, `time`) VALUES
-(1, ' dsa d', 'a dsa', '07.07.15', 1436303998);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -74,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `egitimseminerkayit` (
   `adSoyad` varchar(100) NOT NULL,
   `seminerid` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
 -- Tablo döküm verisi `egitimseminerkayit`
@@ -89,7 +82,8 @@ INSERT INTO `egitimseminerkayit` (`id`, `adSoyad`, `seminerid`) VALUES
 (6, 'Mustafa Ã‡olakoÄŸlu               ', 7),
 (7, 'Mustafa Ã‡olakoÄŸlu               ', 7),
 (8, 'Mustafa Ã‡olakoÄŸlu               ', 7),
-(9, 'Mustafa Ã‡olakoÄŸlu               ', 7);
+(9, 'Mustafa Ã‡olakoÄŸlu               ', 7),
+(10, 'Mustafa Ã‡olakoÄŸlu               ', 10);
 
 -- --------------------------------------------------------
 
@@ -103,14 +97,52 @@ CREATE TABLE IF NOT EXISTS `egitimseminerleri` (
   `detay` text NOT NULL,
   `resim` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=38 ;
 
 --
 -- Tablo döküm verisi `egitimseminerleri`
 --
 
 INSERT INTO `egitimseminerleri` (`id`, `seminerAdi`, `detay`, `resim`) VALUES
-(7, 'seminer baÅŸlÄ±k', 'abcdef', '550686.jpeg');
+(37, 'eÄŸitim semineri 1', 'dsadadad', '229061.jpeg');
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `egitimseminerresimler`
+--
+
+CREATE TABLE IF NOT EXISTS `egitimseminerresimler` (
+  `seminerid` int(11) NOT NULL,
+  `resim1` varchar(100) NOT NULL,
+  `resim2` varchar(100) NOT NULL,
+  `resim3` varchar(100) NOT NULL,
+  `resim4` varchar(100) NOT NULL,
+  `resim5` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Tablo döküm verisi `egitimseminerresimler`
+--
+
+INSERT INTO `egitimseminerresimler` (`seminerid`, `resim1`, `resim2`, `resim3`, `resim4`, `resim5`) VALUES
+(21, '', '', '', '', ''),
+(22, '', '', '', '', ''),
+(23, '', '', '', '', ''),
+(24, '', '', '', '', ''),
+(25, '', '', '', '', ''),
+(26, '', '', '', '', ''),
+(27, '', '', '', '', ''),
+(28, '878024.jpeg', '', '', '', ''),
+(29, '864648.jpeg', '', '', '', ''),
+(30, '482269.jpeg', '', '', '', ''),
+(31, '305197.jpeg', '882116.jpeg', '', '', ''),
+(32, '', '730093.png', '', '', ''),
+(33, '', '278363.png', '', '', ''),
+(34, '', '', '', '', ''),
+(35, '', '', '', '', ''),
+(36, '310086.jpeg', '936883.jpeg', '', '', ''),
+(37, '745584.png', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -127,6 +159,13 @@ CREATE TABLE IF NOT EXISTS `iletisim` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
+--
+-- Tablo döküm verisi `iletisim`
+--
+
+INSERT INTO `iletisim` (`id`, `adSoyad`, `email`, `mesaj`, `okunma`) VALUES
+(1, 'dsad', 'sdada', 'dsa', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -137,34 +176,18 @@ CREATE TABLE IF NOT EXISTS `mezunbilgi` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `adSoyad` varchar(100) NOT NULL,
   `calistigiYer` varchar(200) NOT NULL,
+  `telefon` varchar(100) NOT NULL,
+  `ePosta` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Tablo döküm verisi `mezunbilgi`
 --
 
-INSERT INTO `mezunbilgi` (`id`, `adSoyad`, `calistigiYer`) VALUES
-(3, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(5, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(6, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(7, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(8, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(9, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(10, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(11, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(12, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(13, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(14, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(15, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(16, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(17, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(20, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(22, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(23, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(24, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(26, 'Mustafa Ã‡olakoÄŸlu', 'dsa da'),
-(27, 'Mustafa Ã‡olakoÄŸlu', 'dsa da');
+INSERT INTO `mezunbilgi` (`id`, `adSoyad`, `calistigiYer`, `telefon`, `ePosta`) VALUES
+(1, 'Mustafa Ã‡olakoÄŸlu', 'MEBDE', '', ''),
+(2, 'Mustafa Ã‡olakoÄŸlu', 'MEBDE', 'dasda', 'dsadada');
 
 -- --------------------------------------------------------
 
@@ -204,7 +227,14 @@ CREATE TABLE IF NOT EXISTS `onkayit` (
   `email` varchar(100) NOT NULL,
   `okunma` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Tablo döküm verisi `onkayit`
+--
+
+INSERT INTO `onkayit` (`id`, `tc`, `ad`, `soyad`, `cinsiyet`, `meslek`, `dogumYeri`, `dGun`, `dAy`, `dYil`, `ogrenimDurum`, `adres`, `ilce`, `telefon`, `email`, `okunma`) VALUES
+(2, 'SDAD', 'SDA', 'ASD', 'ERKEK', 'SXASD', 'SA', 1, 1, 1930, '1', 'MCBM', 'ALACAKAYA', '153453', '4DSA', 0);
 
 -- --------------------------------------------------------
 
@@ -217,6 +247,13 @@ CREATE TABLE IF NOT EXISTS `onkayitdigerbilgiler` (
   `programid` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Tablo döküm verisi `onkayitdigerbilgiler`
+--
+
+INSERT INTO `onkayitdigerbilgiler` (`onkayitid`, `programid`) VALUES
+(2, '4');
+
 -- --------------------------------------------------------
 
 --
@@ -228,15 +265,14 @@ CREATE TABLE IF NOT EXISTS `programlar` (
   `programAdi` varchar(100) NOT NULL,
   `programdetay` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Tablo döküm verisi `programlar`
 --
 
 INSERT INTO `programlar` (`id`, `programAdi`, `programdetay`) VALUES
-(1, 'Office 2013', 'asdadad'),
-(2, 'Ingilizce A1', 'aaaa');
+(4, 'Ä°ngilizce', 'detaylar detaylar');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
