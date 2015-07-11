@@ -9,7 +9,9 @@
 				clk::formVeriDuzelt();
 				$adSoyad = @$_POST["adSoyad"];
 				$calistigiYer = @$_POST["calistigiYer"];
-				$this->insert("mezunbilgi","id,adSoyad,calistigiYer","'','$adSoyad','$calistigiYer'");
+				$telefon = @$_POST["telefon"];
+				$ePosta = @$_POST["ePosta"];
+				$this->insert("mezunbilgi","id,adSoyad,calistigiYer,telefon,ePosta","'','$adSoyad','$calistigiYer','$telefon','$ePosta'");
 				$data["eklendi"]=true;
 				$data["eklenen"]=$adSoyad;
 			}

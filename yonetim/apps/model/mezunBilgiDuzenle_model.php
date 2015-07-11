@@ -12,7 +12,9 @@
 					clk::formVeriDuzelt();
 					$adSoyad = @$_POST["adSoyad"];
 					$calistigiYer = @$_POST["calistigiYer"];
-					$this->update("mezunbilgi","adSoyad='$adSoyad',calistigiYer='$calistigiYer'","id='$id'");
+					$telefon = @$_POST["telefon"];
+					$ePosta = @$_POST["ePosta"];
+					$this->update("mezunbilgi","adSoyad='$adSoyad',calistigiYer='$calistigiYer',telefon='$telefon',ePosta='$ePosta'","id='$id'");
 				}
 				$data["kisiBilgi"]=$this->select("mezunbilgi","id='$id'");
 			}

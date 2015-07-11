@@ -16,6 +16,14 @@
 					<td class="input"><input type="text" name="calistigiYer" value="<?php echo $kisi["calistigiYer"]; ?>" /></td>
 				</tr>
 				<tr>
+					<td class="bilgi">Telefon</td>
+					<td class="input"><input type="text" name="telefon" value="<?php echo $kisi["telefon"]; ?>" /></td>
+				</tr>
+				<tr>
+					<td class="bilgi">E-posta</td>
+					<td class="input"><input type="text" name="ePosta" value="<?php echo $kisi["ePosta"]; ?>" /></td>
+				</tr>
+				<tr>
 					<td class="bilgi">&nbsp;</td>
 					<td class="input"><input type="submit" value="Kaydet" /></td>
 				</tr>

@@ -32,15 +32,13 @@
                 </ul>
               </article>
               <article class="col_4 pad_left2">
-                <h3>BULTENLERIMIZ:</h3>
-                <form id="newsletter" action="#" method="post">
-                  <div class="wrapper">
-                    <div class="bg">
-                      <input type="text">
-                    </div>
-                  </div>
-                  <a href="#" class="button"><span><span><strong>Kayıt ol</strong></span></span></a>
-                </form>
+				<br />
+				<br />
+				<br />
+				<a href="mailto:mustafacolakoglu94@gmail.com">mustafacolakoglu94@gmail.com</a>
+				<br />
+				<br />
+				<a href="mailto:ofd1991@gmail.com">ofd1991@gmail.com</a>
               </article>
             </div>
             <div class="wrapper">

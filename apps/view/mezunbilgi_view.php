@@ -6,6 +6,8 @@
 					<tr>
 						<td><strong>Adı Soyadı</strong></td>
 						<td><strong>Çalıştığı Yer</strong></td>
+						<td><strong>Telefon</strong></td>
+						<td><strong>E-posta</strong></td>
 					</tr>
 				</thead>
 				<tbody>
@@ -15,6 +17,8 @@
 					<tr>
 						<td><?php echo $mezun["adSoyad"]; ?></td>
 						<td><?php echo $mezun["calistigiYer"]; ?></td>
+						<td><?php echo $mezun["telefon"]; ?></td>
+						<td><?php echo $mezun["ePosta"]; ?></td>
 					</tr>
 					<?php
 					}
